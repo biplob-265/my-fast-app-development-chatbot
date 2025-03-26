@@ -1,0 +1,60 @@
+// Generated code for this emailAddress Widget...
+Padding(
+  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+  child: Container(
+    width: double.infinity,
+    child: TextFormField(
+      controller: _model.emailAddressTextController,
+      focusNode: _model.emailAddressFocusNode,
+      autofocus: true,
+      autofillHints: [AutofillHints.email],
+      obscureText: false,
+      decoration: InputDecoration(
+        labelText: 'Email',
+        labelStyle: FlutterFlowTheme.of(context).labelLarge.override(
+              fontFamily: 'Poppins',
+              letterSpacing: 0.0,
+              useGoogleFonts: false,
+            ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Color(0xFFABA4AD),
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: FlutterFlowTheme.of(context).primary,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: FlutterFlowTheme.of(context).alternate,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: FlutterFlowTheme.of(context).alternate,
+            width: 2,
+          ),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        filled: true,
+        fillColor: Color(0xFF544A56),
+      ),
+      style: FlutterFlowTheme.of(context).bodyLarge.override(
+            fontFamily: 'Poppins',
+            letterSpacing: 0.0,
+            useGoogleFonts: false,
+          ),
+      keyboardType: TextInputType.emailAddress,
+      validator:
+          _model.emailAddressTextControllerValidator.asValidator(context),
+    ),
+  ),
+)
